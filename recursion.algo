@@ -1,0 +1,19 @@
+ALGORITHM palindrome
+VAR
+    word : STRING;
+    i, j, n : INTEGER;
+BEGIN
+    n := word.length
+    IF (n<=1) THEN
+        write ("enter a valid word")
+    END_IF
+    FOR i FROM 0 TO n-1 STEP 1 DO
+    FOR j FROM n-1 TO 0 STEP 1 DO
+    IF (word[i] = word[j]) THEN
+        write ("the word is palindrome")
+    ELSE
+        write ("the word is not palindrome")
+    END_IF
+    END_FOR
+    END_FOR
+END
